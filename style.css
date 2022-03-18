@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    text-align: center;
+    background: var(--Pale-blue);
+}
+
+.container{
+    background: white;
+    max-width: 350px;
+    margin: 100px auto 0px;
+    border-radius: 20px;
+}
+
+.imgorder{
+    max-width: 350px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 7px;
+}
+
+div > h2, p{
+    max-width: 270px;
+    margin: 20px auto;
+}
+
+div > h2{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+div > p{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+}
+
+.plan{
+    background: var(--Very-pale-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 270px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.plan p{
+    display: contents;
+}
+
+.panual{
+    color: black;
+    font-weight: 900;
+}
+
+button{
+    cursor: pointer;
+}
+
+.plan button{
+    font-weight: 700;
+    color: var(--Bright-blue);
+    background: transparent;
+    text-decoration: underline;
+}
+
+.plan button:hover{
+    text-decoration: none;
+    color: hsl(239, 30%, 60%);
+}
+
+.btnpay{
+    background: var(--Bright-blue);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto 18px;
+    width: 290px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hsl(239, 84%, 81%);
+}
+
+.btnpay:hover{
+    background: hsl(239, 30%, 60%);
+}
+
+.btncancel{
+    background: transparent;
+    color: hsl(238, 38%, 63%);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto 25px;
+    width: 290px;
+}
+
+.btncancel:hover{
+    color:black;
+}
+
+.attribution { 
+    margin-top: 15px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
